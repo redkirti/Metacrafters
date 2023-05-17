@@ -22,7 +22,7 @@ The `mint` function is used to create new tokens. It takes two parameters: `_add
 
 The `burn` function is used to destroy existing tokens. It takes two parameters: `_address` (the address from which the tokens will be burned) and `_value` (the amount of tokens to burn). This function verifies if the balance of the `_address` is greater than or equal to the specified `_value`. If the condition is met, it subtracts the `_value` from the total supply and reduces the balance of the `_address` by the same amount.
 
-Note that if the condition is not met (i.e., the balance is insufficient), the `burn` function will not revert the transaction. Instead, it will have no effect when called with an amount that exceeds the balance.
+Note that if the condition is not met (i.e., the balance is insufficient), the `burn` function will have no effect.
 
 ## License
 
